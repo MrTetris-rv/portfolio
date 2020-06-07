@@ -88,9 +88,11 @@ li a:focus {
   line-height: 74px;
   text-transform: uppercase;
 }
+
 .head span {
   color: #f1585b;
 }
+
 .text {
   position: absolute;
   top: 50%;
@@ -106,15 +108,18 @@ li a:focus {
 
 
 @media (max-width:763px) {
+
   /*на телефоне*/
   body {
     width: 100%;
   }
+
   .head {
     margin-left: 0;
     width: 100vw;
     height: 100vh;
   }
+
   .backgroundDesktop {
     background: #2c1656;
     width: 300px;
@@ -127,6 +132,7 @@ li a:focus {
     transform: translate(-50%, -50%);
     box-shadow: 0px 0px 93px -43px rgba(0, 0, 0, 0.75);
   }
+
   .main {
     height: 230px;
     width: 300px;
@@ -138,12 +144,15 @@ li a:focus {
     box-shadow: 0px 0px 93px -43px rgba(255, 93, 255, 0.9);
     background: linear-gradient(#f1585b, #a83ca5);
   }
+
   .main img {
     width: 270px;
   }
+
   .text {
     border: none;
   }
+
   .head p {
     color: white;
     margin: 0;
@@ -153,6 +162,7 @@ li a:focus {
     text-transform: uppercase;
     margin-left: 10px;
   }
+
   .menu {
     display: none;
   }
