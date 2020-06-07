@@ -1,0 +1,1 @@
+home = document.getElementById("home");

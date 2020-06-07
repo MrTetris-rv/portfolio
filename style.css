@@ -1,0 +1,159 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #170347;
+  overflow: hidden;
+  min-height: 100vh;
+}
+
+.menu {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  right: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  padding: 40px;
+}
+
+li a {
+  text-decoration: none;
+  color: white;
+  font-size: 24px;
+  font-weight: 600;
+  padding: 20px;
+  text-transform: uppercase;
+}
+
+li a:hover {
+  background: #f1585b;
+  border-radius: 20px;
+}
+
+li a:focus {
+  background: #f1585b;
+  border-radius: 20px;
+}
+
+.backgroundDesktop {
+  background: #2c1656;
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 0px 93px -43px rgba(0, 0, 0, 0.75);
+}
+
+.main {
+  height: 400px;
+  width: 530px;
+  border-radius: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 0px 93px -43px rgba(255, 93, 255, 0.9);
+  background: linear-gradient(#f1585b, #a83ca5);
+}
+
+.text img {
+  border-radius: 10px;
+}
+
+.head {
+  width: 562px;
+  height: 153px;
+  margin-left: 32px;
+  margin-top: 32px;
+}
+
+.head p {
+  color: white;
+  margin: 0;
+  font-weight: 900;
+  font-size: 65px;
+  line-height: 74px;
+  text-transform: uppercase;
+}
+.head span {
+  color: #f1585b;
+}
+.text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  text-align: center;
+
+  padding: 10px;
+  color: white;
+}
+
+
+
+@media (max-width:763px) {
+  /*на телефоне*/
+  body {
+    width: 100%;
+  }
+  .head {
+    margin-left: 0;
+    width: 100vw;
+    height: 100vh;
+  }
+  .backgroundDesktop {
+    background: #2c1656;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 0px 93px -43px rgba(0, 0, 0, 0.75);
+  }
+  .main {
+    height: 230px;
+    width: 300px;
+    border-radius: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 0px 93px -43px rgba(255, 93, 255, 0.9);
+    background: linear-gradient(#f1585b, #a83ca5);
+  }
+  .main img {
+    width: 270px;
+  }
+  .text {
+    border: none;
+  }
+  .head p {
+    color: white;
+    margin: 0;
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 44px;
+    text-transform: uppercase;
+    margin-left: 10px;
+  }
+  .menu {
+    display: none;
+  }
+}
